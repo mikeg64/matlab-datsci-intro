@@ -1,0 +1,1003 @@
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+Solar Photospheric Magnetic Flux
+Tubes: Theory
+The magnetic field in the photospheric layers of the
+Sun is found to occur not in a homogeneous form
+but in discrete concentrations of intense field. The
+most obvious form of magnetic flux (magnetic field
+strength times surface area occupied by the field) is
+seen in SUNSPOTS but it turns out that much smaller
+arrangements of magnetic field are to be found in the lanes
+between granules where downdraughts occur (see SOLAR
+PHOTOSPHERE: GRANULATION). These are the photospheric flux
+tubes: small-scale concentrations of intense magnetic field.
+The tubes have diameters of a few hundred kilometers
+or smaller and field strengths of 1–2 kG. Generally found
+in intergranular lanes, they are subject to the dynamical
+nature of the photospheric environment with its sound
+waves and flows. The tubes are isolated flux tubes in that
+their immediate surroundings are essentially field-free.
+See SOLAR PHOTOSPHERIC MAGNETIC FLUX TUBES: OBSERVATIONS.
+The small-scale tubes of the photosphere may be
+thought of as the elemental building blocks of solar
+magnetism, so an understanding of intense flux tubes has
+implications for a wider understanding of solar and stellar
+magnetic phenomena. Theoretical progress in modelling
+small-scale flux tubes builds on the fact that in such tubes
+variations across the interior of a tube are less important
+than variations along the tube.
+The elemental photospheric flux tube is taken to
+be a cylinder of magnetic flux embedded in a field-free
+environment; the photospheric flux tube is thus a region
+of locally high Alfvén speed. Two basic speeds prove
+central to an understanding of tube dynamics: the slow
+tube speed ct and the kink speed ck . These speeds are
+in turn defined in terms of the sound speed and Alfvén
+speed. For a tube of magnetic field strength B0 with plasma
+density ρ0 and pressure p0 , the sound speed cs and Alfvén
+speed vA of the tube are defined by
+
+cs =
+
+γp0
+ρ0
+
+
+
+1/2
+vA =
+
+B02
+µρ0
+
+1/2
+(1)
+
+where γ (generally taken to be 5/3) is the ratio of specific
+heats of the plasma and µ is its magnetic permeability.
+From the speeds cs and vA we may construct the slow
+magnetoacoustic speed ct and the kink speed ck of a tube:
+ct =
+
+cs vA
+(cs2 + vA2 )1/2
+
+
+ck =
+
+ρ0
+ρ0 + ρ e
+
+1/2
+vA
+
+(2)
+
+here ρe denotes the plasma density of the field-free
+environment of the tube. The slow tube speed and the
+kink speed are important in coronal flux tubes too (see
+MAGNETOHYDRODYNAMIC WAVES).
+A photospheric flux tube is typically a region of
+plasma density depletion: the presence of the magnetic
+field leads to a plasma pressure reduction inside the tube,
+in keeping with the requirement of transverse pressure
+
+balance, and unless there are substantial temperature
+differences between the tube and its environment then
+this reduction in plasma pressure is accompanied by a
+reduction in plasma density. In other words, the magnetic
+field of a photospheric flux tube partially evaculates
+the plasma. This is in contrast to the coronal flux
+tube which is generally a region of plasma enhancement
+and reduced Alfvén speed, achieved without violation
+of pressure balance because the strong and pervasive
+magnetic field of the solar corona can easily accommodate
+any enhancements or reductions in the plasma pressure.
+The thermal structure of a photospheric flux tube
+is complicated. The tube may exchange heat with its
+surroundings, through radiative transport and convective
+energy transport. Detailed numerical studies suggest that
+photospheric magnetic flux tubes are hotter than their
+surroundings in their upper layers but cooler than their
+surroundings in their deeper layers.
+The speeds ct and ck of a photospheric flux tube
+are sub-Alfvénic, and the slow speed is also sub-sonic;
+whether the kink speed is sub-sonic depends on the
+specific parameters of the tube. A numerical illustration
+is of interest. In a photospheric flux tube with B0 = 2 kG
+and plasma density ρ0 = 2.2 × 10−4 kg m−3 , the Alfvén
+speed is vA = 12 km s−1 . Taking the sound speed cs of
+the photosphere to be 8 km s−1 then gives a slow speed
+of ct = 6.7 km s−1 . For a flux tube that has depleted its
+plasma density to some 50% of its environment (so that
+ρ0 = ρe /2, consistent with an environment sound speed
+of 9.6 km s−1 ), we obtain ck = 6.9 km s−1 . Thus the slow
+speed ct is some 56% of the Alfvén speed and the kink
+speed ck is about 57% of the Alfvén speed. The precise
+ordering of the two speeds depends on the details of the
+modelling.
+The speeds ct and ck are associated with the dynamics
+of flux tubes, arising in both wave phenomena and flows
+in tubes. The speed ct , made up in equal measure of
+the sound speed and the Alfvén speed, is evidentally
+associated with the compressibility of the tube. Any
+squeezing of a tube results in increases in the magnetic
+pressure and plasma pressure in the tube, which act to
+restore the undisturbed state. This is a feature shared by
+all elastic tubes and consequently the equivalent of the
+speed ct arises in a variety of other physical situations,
+with the role of the Alfvén speed being played by the
+appropriate elastic speed of an elastic tube. For example,
+in the case of a blood vessel the equivalent of the speed vA
+is simply the elastic speed in the membrane of the blood
+vessel. The speed of sound cs in blood is much larger
+than the elastic speed and so the slow speed is close to
+the elastic speed of the blood vessel. For water in a pipe,
+the relative magnitudes of the two basic speeds depend
+on the material of the pipe. In a metal pipe, the elastic
+speed is much larger than the sound speed in water and
+so the effective slow speed is close to the sound speed in
+water (about 1.4 km s−1 ). By contrast, in a plastic pipe the
+orderings in the two speeds are reversed and the effective
+propagation speed is close to the elastic speed in plastic
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+1
+
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+(about 10 m s−1 ), lying far below the speed of sound in
+water.
+The kink speed involves both the tube and its
+environment. The kink wave which propagates with this
+speed (see below) involves the magnetic tension force
+in the tube and the kink wave displaces both the tube
+and its surroundings by about equal measures, hence the
+combined occurrence of the densities ρ0 and ρe . The speed
+also arises in the description of magnetoacoustic surface
+waves on an interface between two plasmas of different
+properties.
+An important question in the physics of photospheric
+flux tubes is how are they formed.
+A flux tube
+with kilogauss field strength requires strong forces
+to bring about its intense state, with the magnetic
+pressure B02 /2µ being far in excess of the pressure
+of converging flows that granulation may provide;
+the tube finds equilibrium through evacuation of its
+interior, reducing the plasma pressure and thus allowing
+magnetostatic pressure balance between the flux tube
+and its environment to occur. It is envisaged that
+granulation acts to ‘shepherd’ flux tubes into the regions
+where downdraughts between the granules occur. The
+process is an example of flux expulsion (by advection),
+whereby the convective flows of the photosphere move
+magnetic field into intergranular lanes, in keeping with
+the frozen flux concept of ideal MAGNETOHYDRODYNAMICS.
+The process is not of itself sufficient to account for the
+observed field strengths; it brings about the ‘seedlings’
+of photospheric flux tubes but other effects are needed
+to produce the observationally determined intense field
+strengths. The additional process that comes into play
+is driven by the super-adiabatic temperature gradient of
+the solar convection zone (see SOLAR INTERIOR: CONVECTION
+ZONE), which in field-free regions drives the convective
+flows (granules and supergranules; see SOLAR PHOTOSPHERE:
+SUPERGRANULATION) that distinguish the Sun’s convection.
+In flux tubes, convectively driven flows are channelled by
+the tubes. The fact that photospheric flux tubes reside
+in a plasma that is stratified by gravity means that any
+downdraught generated within a flux tube brings less
+dense plasma from the higher reaches of the stratified tube
+to the deeper layers within the tube, allowing the high
+plasma pressure of the environment to squeeze the tube
+further. An increase in magnetic field strength results. The
+process is referred to as convective collapse. It may be
+described in mathematical detail for a thin flux tube (see
+below).
+A flow in a magnetic flux tube may also develop
+because of pressure differences between the footpoints of
+the tube. For example, if the footpoints of a tube are rooted
+in regions that are magnetically distinct from one another,
+such as one footpoint in a sunspot and the other in a fieldfree region, then plasma pressure differences arise and a
+flow may be driven in the tube. Such motions of the plasma
+within the tube are called siphon flows.
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+Waves in photospheric flux tubes
+To give a detailed description of the magnetohydrodyanmic waves that an isolated photospheric flux tube supports we consider the equations of ideal MHD. Consider
+an equilibrium magnetic field B0 = B0 (r)ẑ aligned with
+the z-axis of a cylindrical polar coordinate system (r, θ, z).
+To begin with we will ignore the effects of gravity. Then
+the equilibrium plasma pressure p0 (r) of a radially structured magnetic atmosphere is such as to maintain total
+pressure balance: the sum of the plasma pressure p0 (r)
+and the magnetic pressure B02 (r)/2µ is a constant. Where
+the field is strong, as in the center of a flux tube, the plasma
+pressure is correspondingly reduced.
+Small-amplitude motions v = (vr , vθ , vz ) about a
+structured equilibrium state satisfy the coupled wave
+equations
+
+ρ0 (r)
+
+∂2
+∂2
+− vA2 (r) 2
+2
+∂t
+∂z
+
+
+vr +
+
+∂ 2 pT
+=0
+∂r∂t
+
+(3)
+
+
+
+
+∂2
+∂2
+1 ∂ 2 pT
+2
+=0
+−
+v
+(r)
+vθ +
+A
+2
+2
+∂t
+∂z
+r ∂θ∂t
+ 2
+
+∂
+∂2
+c2 (r)
+1 ∂ 2 pT
+2
+−
+c
+(r)
+vz = − 2 s 2
+t
+2
+2
+∂t
+∂z
+cs (r) + vA (r) ρ0 (r) ∂z∂t
+ρ0 (r)
+
+(4)
+(5)
+
+with the evolution of pT (r, θ, z) described by
+∂pT
+∂vz
+= ρ0 (r)vA2 (r)
+− ρ0 (r)[cs2 (r) + vA2 (r)]div v .
+∂t
+∂z
+
+(6)
+
+Here ct (r), cs (r) and vA (r) denote the slow speed, sound
+speed and Alfvén speed within the radially structured
+plasma, of density ρ0 (r). Equations (3)–(5) come from
+the components of the momentum equation in which
+the magnetic force has been expressed in terms of the
+perturbation in total pressure pT , defined as the sum of
+the perturbation p in the dynamical plasma pressure and
+the magnetic pressure perturbation B0 (r)Bz /µ, with Bz
+being the component of the perturbed magnetic field in
+the direction of the applied magnetic field B0 . Equation
+(6) results from a combination of the isentropic (adiabatic)
+equation and the induction equation of ideal MHD.
+One solution of the above equations is the torsional
+Alfvén wave, which propagates motions vθ , independent
+of θ, according to the wave equation
+∂ 2 vθ
+∂ 2 vθ
+= vA2 (r) 2 .
+∂t 2
+∂z
+
+(7)
+
+Torsional oscillations, which have vr = 0, vz = 0 and pT =
+0, have a radial dependence determined by the manner
+in which the oscillations are generated. The oscillations
+exhibit phase mixing by which radial gradients of the
+motion grow rapidly in regions where the Alfvén speed
+vA (r) varies sharply in r.
+In addition to torsional Alfvén waves there are
+motions that are compressive, with p = 0 and pT = 0.
+We examine the elemental magnetic flux tube that models
+photospheric conditions, taking the applied magnetic field
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+2
+
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+B0 (r)ẑ to be confined within a cylindrical tube of radius
+a. The plasma pressure and density within the tube are p0
+and ρ0 ; the corresponding plasma pressure and density in
+the tube’s field-free environment are pe and ρe . The tube is
+in magnetostatic pressure balance with its surroundings:
+pe = p0 + B02 /2µ. With cs and vA now denoting the
+sound speed and Alfvén speed within the tube and ce the
+sound speed in the tube’s environment, pressure balance
+combined with the ideal gas law then shows that the
+plasma density ρ0 within the tube is related to the density
+ρe in the tube’s environment through
+ρ0
+c2
+= 2 1e 2 .
+ρe
+cs + 2 γ v A
+
+(8)
+
+Thus, for sound speeds cs and ce that are roughly
+comparable, a photospheric flux tube is a region of density
+depletion (i.e. ρ0 < ρe ).
+Now the media inside and outside the elemental
+flux tube are uniform, and this affords a considerable
+simplification. In a uniform medium, the wave equations
+(3)–(6) may be combined to yield an equation for pT .
+Writing
+pT (r, θ, z, t) = pT (r) exp i(ωt + nθ − kz z)
+provides a Fourier description of the motions, of frequency
+ω, longitudinal wavenumber kz and azimuthal number
+n. The integer n(= 0, 1, 2, . . .) describes the geometrical
+form of the perturbations. The case n = 0 gives the
+sausage wave and corresponds to symmetric squeezings
+and rarefactions of the tube; these are compressional (pT =
+0) oscillations. The case n = 1 describes the kink wave of
+the tube; in such waves the motion of the tube resembles
+a wriggling snake, with the whole tube being displaced
+without changing its cross-sectional shape. Finally, there
+are also waves with n ≥ 2; these are the fluting waves.
+For a uniform tube, pT satisfies
+r2
+
+dpT
+d 2 pT
++r
+− (m20 r 2 + n2 )pT = 0
+dr 2
+dr
+
+where
+m20 =
+
+(9)
+
+(kz2 cs2 − ω2 )(kz2 vA2 − ω2 )
+.
+(cs2 + vA2 )(kz2 ct2 − ω2 )
+
+This is a form of Bessel’s equation with solution pT =
+In (m0 r) inside (r < a) the tube; In is a modified Bessel
+function. Similarly, in the field-free environment (r > a)
+of the flux tube, where the sound speed is ce , a solution
+pT proportional to the modified Bessel function Kn (me r)
+arises, where
+ω2
+m2e = kz2 − 2 .
+ce
+It is usual to examine modes for which m2e is positive,
+corresponding to selecting waves that are confined to near
+the tube. Then, matching pT and vr across r = a results in
+1
+ρ0 (kz2 vA2
+
+−
+
+ω2 )
+
+m0
+
+1
+In (m0 a)
+K  (me a)
++
+=0
+me n
+2
+In (m0 a) ρe ω
+Kn (me a)
+
+(10)
+
+where a prime ( ) denotes the derivative of a modified
+Bessel function (e.g. In (m0 a) ≡ dIn (x)/dx evaluated at
+x = m0 a, etc). This is the dispersion relation for tube
+waves in an isolated magnetic flux tube, requiring that
+me > 0; surface waves arise whenever m20 > 0, and body
+waves occur if m20 < 0. It is evident that tube waves are
+dispersive, their phase speed c(≡ ω/kz ) depending on the
+wavenumber (in the combination kz a).
+Solution of the dispersion relation (10), for conditions
+appropriate for an isolated photospheric flux tube, show
+that there are slow body waves (both sausage and kink)
+with phase speeds c that lie between ct and cs and slow
+surface waves which have phase speeds that are less than
+ct . Also, there is a surface wave with a phase speed close
+to the kink speed ck and another surface wave with phase
+speed near ce . Fluting modes also have speeds close to ck .
+There is particular interest in waves that are much
+1.
+longer than a tube diameter, corresponding to kz a
+This is the thin flux tube limit, of special interest for
+photospheric flux tubes. Since generally ω ∼ kz vA , the
+1 corresponds to requiring that periods
+condition kz a
+50 s for
+τ (≡ 2π/ω) are such that τ
+2πa/vA , giving τ
+a tube of radius a = 100 km. P-modes, for example, have
+periods around 300 s, roughly meeting this criterion. With
+1, the slow surface wave has phase speed close to
+kz a
+ct .
+Dispersion relations such as equation (10) are
+important in the development of a nonlinear wave theory
+for a tube. Indeed, it has been shown that slow (sausage)
+surface waves have motions v(z, t) along a thin tube which
+satisfy the nonlinear integrodifferential equation
+∂v
+∂3
+∂v
+∂v
++ ct
++ β0 v
++ α0 3
+∂t
+∂z
+∂z
+∂z
+
+
+
+∞
+
+v(s, t) ds
+= 0.
+[λ2 a 2 + (z − s)2 ]1/2
+(11)
+and λ depend on the various
+−∞
+
+The constants α0 , β0
+parameters of the tube.
+Equation (11) is sometimes referred to as the
+Leibovich–Roberts equation. An explicit form of its
+solution is not known although it is amenable to numerical
+solution. It is of particular interest because it is associated
+with soliton behavior. Solitons are nonlinear waves with
+specific interaction properties that make them worthy of
+special study. For the related problem of a magnetic slab—
+the Cartesian equivalent of a flux tube—the equation
+describing the weakly nonlinear slow surface wave is the
+Benjamin–Ono equation, i.e.
+∂v
+∂2
+∂v
+∂v
++ ct
++ β0 v
++ α1 2
+∂t
+∂z
+∂z
+∂z
+
+
+
+∞
+
+−∞
+
+v(s, t)
+ds = 0
+s−z
+
+(12)
+
+for constant α1 . The Benjamin–Ono equation has been
+studied extensively and its soliton solution is known
+explicitly.
+Equations (11) and (12) may be derived
+using thin flux tube theory (see below) or from the
+full equations of ideal MHD, assuming that motions are
+weakly nonlinear and weakly dispersive.
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+3
+
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+z
+
+Thin flux tube theory
+The restriction to thin tubes, in the sense that waves
+are much longer than a tube radius (so that kz a
+1),
+leads to a considerable simplification in the description
+of the dynamics of photospheric flux tubes, so much so
+that it becomes possible to include a number of other
+effects ignored in the discussion of an elemental magnetic
+flux tube. Of particular importance is the influence of
+stratification brought about by gravity. The pressure scale
+height in the photosphere is comparable with a tube radius
+so the effects of gravity are particularly significant in the
+photospheric layers of a tube. Other effects, such as
+radiative transport, may also in principle be included in
+thin flux tube theory.
+To describe motions in a thin tube in the presence
+of gravity the so-called thin flux tube equations are
+used. These equations have been used extensively for
+both analytical and numerical investigations of flux tube
+dynamics. The sausage and kink modes are treated
+separately. The thin tube equations for the sausage mode
+(in ideal MHD) are
+∂
+∂
+ρA + ρvA = 0
+∂t
+∂z
+
+(13)
+
+∂v
+∂v
+1 ∂p
++v
+=−
+−g
+∂t
+∂z
+ρ ∂z
+
+
+∂p
+∂p
+γp ∂ρ
+∂ρ
++v
+=
++v
+∂t
+∂z
+ρ
+∂t
+∂z
+BA = constant
+p+
+
+(15)
+
+2
+
+(17)
+
+In these equations, B(z, t) is the field strength of a
+thin tube with cross-sectional area A(z, t), and v(z, t) is
+the longitudinal flow speed within the tube, where the
+plasma pressure and density are p(z, t) and ρ(z, t). The
+gravitational acceleration is g(=274 m s−2 ), acting in the
+negative z-direction. The external gas pressure pe (z, t)
+is calculated on the boundary of the tube and may vary
+in response to motions in the tube or its environment;
+pressure balance across the tube is maintained at all times
+(as expressed by equation (17)).
+In equilibrium (v = 0, ∂/∂t = 0) the thin tube
+equations for a magnetic flux tube in temperature balance
+with its surroundings (so that cs = ce ) yield
+p0 (z) = p0 (0) e−N
+
+ρ0 (z) = ρ0 (0)
+
+A0 (z) = A0 (0) eN/2
+where
+
+%0 (0) −N
+e
+%0 (z)
+
+B0 (z) = B0 (0) e−N/2
+
+
+z
+
+N(z) =
+0
+
+r
+
+(18)
+
+dz
+%0 (z)
+
+is the integrated pressure scale height; %0 (z)(≡p0 (z)gρ0 (z))
+is the pressure scale height inside the tube. See figure 1.
+
+pe
+
+g
+Bo
+
+Figure 1. Equilibrium state of a thin magnetic flux tube in a
+stratified plasma. The tube is confined by the external plasma
+pressure pe in the field-free environment of the tube. The region
+within the tube is generally of lower plasma density than the
+environment.
+
+The linear form of the thin tube equations is readily
+found for the equilibrium (18). Ignoring contributions
+from variations in pe , longitudinal motions are found to
+satisfy the Klein–Gordon equation
+∂ 2Q
+∂ 2Q
+− ct2 (z) 2 + '2S (z)Q = 0
+2
+∂t
+∂z
+
+(14)
+
+(16)
+
+B
+= pe .
+2µ
+
+Bo
+
+(19)
+
+where Q(z, t) is related to the flow v(z, t) and '2S (z)
+depends on the details of the equilibrium state.
+In an isothermal atmosphere, %0 , ct and '2S are all
+constants, with
+
+
+
+
+2
+4c2
+c2
+9
+1
+'2S = t 2
+−
++ s2 1 −
+.
+(20)
+4 γ
+γ
+4%0
+γ vA
+The Klein–Gordon equation (19) then yields the dispersion
+relation
+ω2 = kz2 ct2 + '2S
+
+(21)
+
+which shows that 'S is a cutoff frequency (for sausage
+waves in a thin tube). '2S may be viewed as made up of
+two contributions, the first (corresponding to the first term
+on the right-hand side of equation (20)) arising from the
+geometrical shape of the undisturbed tube and the second
+(corresponding to the second term on the right of equation
+(20)) being determined by the tube’s elasticity. A rigid
+tube with exponential cross-sectional area (determined
+according to the equilibrium (18) with %0 constant) has
+cutoff frequency (9/4 − 2/γ )1/2 cs /2%0 , whereas a straight
+and vertical rigid tube has cutoff frequency cs /2%0 . In
+general the cutoff frequency for the sausage mode in a
+tube is less than the cutoff frequency of a rigid tube.
+The Klein–Gordon equation also describes the kink
+mode in a thin tube. Thin tube equations for the kink mode
+may be used to describe the transverse displacements
+ξ(z, t) of a vertical tube, leading to the wave equation
+
+
+∂ 2ξ
+∂ 2ξ
+ρ0 − ρe ∂ξ
+2
+.
+(22)
+= ck (z) 2 + g
+∂t 2
+∂z
+ρ0 + ρe ∂z
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+4
+
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+Equation (22) may be cast into an equation of the Klein–
+Gordon form, just as for the sausage mode. For an
+isothermal medium, the dispersion relation for the kink
+mode is
+ω2 = kz2 ck2 + '2K
+(23)
+
+With the illustrative boundary conditions that u = 0 at
+levels z = 0 and z = −d, we obtain the approximate
+solution
+
+
+ πz 
+z
+u(z) = u0 exp
+sin
+(26)
+4%0
+d
+
+where the cutoff frequency for the kink mode is
+
+with
+
+'K =
+
+
+
+ck
+.
+4%0
+
+The forms (19)–(24) allow a direct comparison
+between sausage and kink modes. For example, with
+again vA = 12 km s−1 , cs = 8 km s−1 and %0 = 140 km,
+sausage and kink modes both grow in amplitude by a
+factor of e in propagating a distance of 560 km (four scale
+heights). The sausage wave, propagating with a speed
+ct = 6.7 km s−1 , has a cyclic cutoff frequency, 'S /2π, of
+4.2 mHz (period 240 s). The kink wave has a speed of
+ck = 6.9 km s−1 , close to the sausage mode’s, but its cutoff
+frequency at 2 mHz (period 500 s) is very different. The
+sausage mode’s behavior is similar to that of a vertically
+propagating sound wave, which has a propagation speed
+of 8 km s−1 and cutoff frequency of 4.5 mHz (period 220 s),
+although it e-folds in just 280 km (two scale heights);
+consequently, sound waves are expected to form shocks
+lower in the atmosphere than tube waves. The fact that
+the cutoff frequency of the kink mode is considerably
+smaller than the cutoff frequency of the sausage wave or
+a sound wave suggests that kink waves may survive to
+higher levels in the solar atmosphere than sausage waves
+or sound waves.
+The dispersion relations (21) and (23) imply that an
+impulsively generated wave (sausage or kink) results in a
+wavefront which propagates with the speed ct or ck , the
+wavefront supporting an oscillating wake which rises and
+falls with the frequency 'S or 'K .
+
+Convective collapse
+Convective collapse, the process by which a photospheric
+flux tube may be formed with kilogauss field strengths,
+may be demonstrated from the thin flux tube equations
+for the sausage mode. The differential equation satisfied
+by the longitudinal flow, Fourier analyzed by writing
+v(z, t) = u(z) exp(iωt), is
+B0 d
+ρ0 dz
+
+
+
+ρ0 ct2 du
+B0 dz
+
+
+
+where
+ωg2
+
+
+ 2
+
+γ ct2
+ct
++
++ ω2 − ωg2
+u=0
+2cs2
+vA2
+g
+=
+%0
+
+
+%0
+
+γ −1
++
+γ
+
+ω2 = ct2
+
+(24)
+
+(25)
+
+
+
+is the square of the Brunt–Väisäla (or buoyancy) frequency
+of a plasma element in a stratified atmosphere. In
+the atmosphere of a flux tube embedded within the
+solar convection zone, ωg2 is negative and this drives an
+instability within the tube. The magnetic field may quench
+the instability if it is sufficiently strong. This is readily
+illustrated by an approximate solution of equation (25).
+
+1
+π2
++
++
+d 2 16%20
+
+
+
+1
+γ
++ 2
+2cs
+vA2
+
+
+
+
+ωg2 .
+
+Hence, if ωg2 < 0 then a mode with ω2 < 0 may arise,
+corresponding to an instability. The instability amounts to
+a flow of plasma within the stratified tube; a downdraught
+brings the more tenuous plasma in the higher levels of the
+tube to layers deeper within the tube, allowing the external
+plasma pressure to squeeze the tube. A stronger field
+results. This is convective collapse. The process is halted
+when the field strength B0 is sufficiently large to resist
+the compression of the tube, and so quench the instability
+(reducing ω2 to zero). A flux tube with only moderate field
+strength finds itself subject to the instability until it has
+strengthened itself, through convective collapse, to a state
+where it may resist the process. Consequently, intense and
+isolated magnetic flux tubes are the expected norm in any
+medium such as the solar photosphere where convective
+effects operate in the presence of magnetic field.
+A determination of the field strength necessary to
+quench the instability depends on the precise details of
+the modelling. Studies of the process under conditions
+appropriate for the solar convection zone show that
+kilogauss field strengths are required before the collapse
+is halted. However, what precisely is the ensuing state
+of a collapsed flux tube remains uncertain, mainly as a
+result of the need to take into account a number of detailed
+and complicated effects ignored in the above treatment. In
+particular, it is necessary to include the effects of RADIATIVE
+TRANSFER, nonlinearity and a more realistic choice of flow
+boundary conditions.
+
+Numerical simulations
+Numerical simulations allow the inclusion of a variety of
+effects that complicate the description of the basic modes
+of behavior of photospheric flux tubes, and this promotes
+a more direct comparison with solar observations. By
+following the motion of a parcel of magnetized fluid (using
+a so-called Lagrangian approach), it proves possible, for
+example, to explore the linear and nonlinear sausage and
+kink modes in a vertical tube or to simulate the convective
+collapse process. These problems are usually addressed
+through numerical solution of thin flux tube equations,
+allowing for the important effects of stratification. Broadly,
+analytic theory for an ideal plasma has provided valuable
+insights for the more complex modelling of flux tubes
+under conditions representative of the solar photosphere.
+Thin flux tube theory for the kink mode has also been
+applied to modelling the behaviour of a nonvertical flux
+tube, addressing in particular the important question of
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+5
+
+Solar Photospheric Magnetic Flux Tubes: Theory
+
+E N C Y C LO P E D IA O F A S T R O N O M Y AN D A S T R O P H Y S I C S
+
+how magnetic field stored below the convection zone is
+transported to the solar surface.
+An important question still under active consideration is how to incorporate the environment’s back-reaction
+on a moving flux tube. The effect has been explored for the
+sausage mode and leads to the formation of solitons; the
+influence of stratification on flux tube solitons has not so
+far been explored. The back-reaction of the environment
+on the kink mode is somewhat uncertain, with several alternative possibilities suggested in the literature.
+The behaviour of shocks excited within tubes and
+also the formation of shocks and downflows as a result
+of the convective collapse of a tube have been modelled
+in two-dimensional simulations. Numerical simulations
+have also permitted realistic estimates of the energy flux
+carried by the various waves, allowing applications to the
+Sun and stellar atmospheres more generally to be explored.
+Bibliography
+Hollweg J V 1990 MHD waves on solar magnetic flux tubes
+Physics of Magnetic Flux Ropes (Geophys. Monogr. 58) ed
+C T Russell, E R Priest and L C Lee (Washington, DC:
+AGU) p 23
+Parker E N 1979 Cosmical Magnetic Fields (Oxford: Oxford
+University Press) pp 841
+Roberts B 1992 Magnetohydrodynamic waves in structured magnetic fields Sunspots: Theory and Observations ed J H Thomas and N O Weiss (Dordrecht:
+Kluwer) p 303
+Roberts B and Ulmschneider P 1997 Dynamics of flux tubes
+in the solar atmosphere: theory Solar and Heliospheric
+Plasma Physics ed G M Simnett, C E Alissandrakis and
+L Vlahos (Berlin: Springer) p 75
+Ryutova M P 1990 Waves and oscillations in magnetic
+flux tubes Solar Photosphere: Structure, Convection,
+and Magnetic Fields (IAU Symp. 138) ed J O Stenflo
+(Dordrecht: Reidel) p 229
+Schüssler M 1990 Theoretical aspects of small-scale photospheric magnetic fields Solar Photosphere: Structure,
+Convection, and Magnetic Fields (IAU Symp. 138) ed J
+O Stenflo (Dordrecht: Reidel) p 161
+Spruit H C 1981 Magnetic flux tubes The Sun as a Star
+(NASA SP-450) ed S Jordan (Washington, DC: NASA)
+p 385
+Spruit H C and Roberts B 1983 Magnetic flux tubes on the
+Sun Nature 304 401
+Spruit H C, Schüssler M and Solanki S K 1991 Filigree and
+flux tube physics Solar Interior and Atmosphere ed A
+N Cox, W C Livingston and M S Matthews (Tucson,
+AZ: University of Arizona Press) p 890
+B Roberts
+
+Copyright © Nature Publishing Group 2001
+Brunel Road, Houndmills, Basingstoke, Hampshire, RG21 6XS, UK Registered No. 785998
+and Institute of Physics Publishing 2001
+Dirac House, Temple Back, Bristol, BS1 6BE, UK
+
+6
+
+

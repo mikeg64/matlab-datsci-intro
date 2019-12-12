@@ -1,0 +1,1189 @@
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+C 2011.
+
+doi:10.1088/0004-637X/727/1/17
+
+The American Astronomical Society. All rights reserved. Printed in the U.S.A.
+
+NUMERICAL MODELING OF FOOTPOINT-DRIVEN MAGNETO-ACOUSTIC WAVE PROPAGATION
+IN A LOCALIZED SOLAR FLUX TUBE
+V. Fedun1 , S. Shelyag1,2 , and R. Erdélyi1
+1
+
+2
+
+Solar Physics and Space Plasma Research Centre, Department of Applied Mathematics, University of Sheffield,
+Hounsfield Road, Hicks Building, Sheffield, S3 7RH, UK
+Astrophysics Research Centre, School of Mathematics and Physics, Queen’s University Belfast, Belfast BT7 1NN, UK
+Received 2010 August 17; accepted 2010 November 9; published 2010 December 23
+
+ABSTRACT
+In this paper, we present and discuss results of two-dimensional simulations of linear and nonlinear magnetoacoustic wave propagation through an open magnetic flux tube embedded in the solar atmosphere expanding from
+the photosphere through to the transition region and into the low corona. Our aim is to model and analyze the
+response of such a magnetic structure to vertical and horizontal periodic motions originating in the photosphere.
+To carry out the simulations, we employed our MHD code SAC (Sheffield Advanced Code). A combination of the
+VALIIIC and McWhirter solar atmospheres and coronal density profiles were used as the background equilibrium
+model in the simulations. Vertical and horizontal harmonic sources, located at the footpoint region of the open
+magnetic flux tube, are incorporated in the calculations, to excite oscillations in the domain of interest. To perform
+the analysis we have constructed a series of time–distance diagrams of the vertical and perpendicular components of
+the velocity with respect to the magnetic field lines at each height of the computational domain. These time–distance
+diagrams are subject to spatio-temporal Fourier transforms allowing us to build ω–k dispersion diagrams for all of
+the simulated regions in the solar atmosphere. This approach makes it possible to compute the phase speeds of waves
+propagating throughout the various regions of the solar atmosphere model. We demonstrate the transformation of
+linear slow and fast magneto-acoustic wave modes into nonlinear ones, i.e., shock waves, and also show that
+magneto-acoustic waves with a range of frequencies efficiently leak through the transition region into the solar
+corona. It is found that the waves interact with the transition region and excite horizontally propagating surface
+waves along the transition region for both types of drivers. Finally, we estimate the phase speed of the oscillations
+in the solar corona and compare it with the phase speed derived from observations.
+Key words: magnetohydrodynamics (MHD) – shock waves – Sun: atmosphere – Sun: oscillations
+Online-only material: color figures
+ambiguously analyze the observations. The conditions of the
+plasma in the solar atmosphere are described reasonably well
+by the MHD equations. For a strongly stratified plasma with
+a non-uniform magnetic field configuration, the analytical solutions of the MHD equations are not known, thus, numerical
+simulations have to be used for such studies.
+Theoretical investigations of wave propagation through the
+solar plasma attracted particular attention due to the possibility
+of inferring the detailed plasma properties from the observations
+of solar oscillations. This (known as helioseismological) technique has been considerably exploited to unveil the properties
+of the (invisible) solar interior. Only recently, with the advent
+of observational instruments with particularly high spatial and
+temporal resolutions, has this seismological approach been generalized to the solar chromosphere and corona (see, e.g., Erdélyi
+2006; Erdélyi & Fedun 2007; Andries et al. 2009; De Moortel
+2009; Ruderman & Erdélyi 2009, for reviews with a range of
+applications).
+A variety of one- and multi-dimensional HD and MHD
+numerical simulations of the solar atmosphere have already been
+performed. Recently, linear and nonlinear magneto-acoustic
+wave propagation through a magnetic flux tube has been studied
+numerically by Cargill et al. (1997), Bogdan et al. (2003), Hasan
+et al. (2005), Carlsson & Bogdan (2006), Khomenko & Collados
+(2006), Khomenko et al. (2008), Hasan & van Ballegooijen
+(2008), Taroyan & Erdélyi (2009), Ofman (2009), Fedun et al.
+(2009), and others. The properties of wave propagation in
+such numerical simulations, as in the real Sun, are highly
+sensitive to the properties of the background atmosphere and
+
+1. INTRODUCTION
+Magnetic field plays a fundamental role in the dynamical
+processes in the solar atmosphere. Magnetic structures connect
+the solar convection zone and photosphere through the transition
+region to the solar corona, and may act as a guide for the energy
+supply, leaking it from the solar interior to the outer atmosphere
+(see, e.g., De Pontieu et al. 2004, 2005) which is necessary for
+coronal heating.
+Modern ground- and space-based observational instruments,
+e.g., ROSA, SST, CoMP, SOHO, Hinode/SOT, SDO/AIA allow
+us to study the radiation originating in the solar atmosphere.
+Numerous observations of the presence of MHD waves in the
+solar atmosphere have been reported (see, e.g., the reviews on
+waves and oscillations in open magnetic structures, Banerjee
+et al. 2007; on propagating magneto-acoustic waves, De Moortel
+2009; on Alfvén waves, Mathioudakis et al. 2011; on the
+topic of leakage of p-modes into the transition region, De
+Pontieu & Erdélyi 2006 and others). The observational report
+by Scullion et al. (2010) claims to determine horizontally
+propagating energetic transition region quakes as a result of
+the wave leakage. Erdélyi & Taroyan (2008) has shown the
+detection of oscillations by the EUV Imaging Spectrometer
+(Hinode/EIS). There is no evidence that these motions are
+generated by a flare. This is an important indication for our
+current study and is the Hinode counterpart of observations by
+Tomczyk & McIntosh (2009).
+A certain lack of the detailed understanding of the physical
+processes in the solar plasma often makes it difficult to un1
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+It should also be mentioned that in our simulations the
+radiative losses, dissipative and thermal conduction terms are
+not included. Importance of these effects on wave propagation
+and mode conversion will be analyzed in future.
+In this work, the propagation of slow and fast magnetoacoustic waves, excited by vertical and horizontal drivers, in
+a two-dimensional magnetic flux tube embedded in a realistically stratified solar atmosphere from the photospheric region
+to the lower part of solar corona is addressed. We have analyzed
+the time–distance and spectral properties of wave propagation
+in the various solar atmospheric regions spanning from photosphere to corona.
+The paper is organized as follows. The numerical method
+used to carry out the simulations and the model of the
+solar atmosphere are outlined in Section 2. The magnetic field configuration and the sources that generate the
+wave modes in the computational domain are presented in
+Section 3. In the following section, we discuss and examine in detail the various aspects of linear and nonlinear wave
+evolution in the lower and upper solar atmospheric regions.
+Section 5 is the conclusion.
+
+Figure 1. Vertical dependences of logarithms of the density ρ and the
+temperature T in the computational domain. These profiles are constructed
+using atmospheric parameters for the average quiet Sun (VAL IIIC; Vernazza
+et al. 1981) for the lower part of the model, and McWhirter et al. (1975) coronal
+model for the upper (corona) region.
+
+the configuration of the magnetic field (as pointed out in
+various investigations by Dı́az & Roberts 2006; Ruderman et al.
+2008; Verth et al. 2008; Verth & Erdélyi 2008; Zaqarashvili &
+Skhirtladze 2008; Kuridze et al. 2009; Verth et al. 2010).
+Cargill et al. (1997) examined the evolution of a nonlinear
+Alfvén wave pulse in the region between the solar photosphere
+and corona. The magnetic field was chosen to be potential and
+the background density and temperature were constructed analytically. These profiles lie somewhere between those expected
+in the quiet Sun and active regions. Bogdan et al. (2003) constructed a two-dimensional, time-dependent hydrostatic isothermal MHD model for the investigation of slow and fast magnetoacoustic-gravity monochromatic wave generation, propagation,
+transformation and interaction in the solar photosphere and chromosphere regions. The basic magnetic configuration consisted
+of a large unipolar magnetic flux concentration surrounded on
+each side by two smaller concentrations of opposite-polarity
+field. This type of magnetic structure is a popular model for
+sunspots, pores or even smaller magnetic flux tubes like magnetic bright points where the equilibrium magnetic field is
+strong.
+A non-uniform and non-potential magnetic field configuration embedded in a non-uniform photospheric model has been
+investigated by Khomenko & Collados (2006) to study the
+processes taking place around the equipartition layer (where
+VA = CS ) in sunspots.
+As the magnetic building block of the lower solar atmosphere,
+the chromospheric magnetic network has been simulated by
+Hasan et al. (2005) and Hasan & van Ballegooijen (2008) as a
+thin (1000 km) layer of the solar atmosphere embedded in nonpotential flux tube with periodic horizontal boundary conditions.
+These boundary conditions provide a limit in the simulations due
+to the fast waves generated in the system reaching the boundaries
+rather quickly.
+It is now of particular interest, for the studies of solar MHD
+waves and oscillations, to extend the simulations to include the
+lower solar corona region, especially in light of their relevance
+to MHD heating of the solar corona and the available SDO data
+showing wave coupling from the chromosphere to the corona.
+Such an extension in the modelling represents significant difficulties for the actual implementation of simulations due to, e.g.,
+the tremendous range of the thermodynamical parameters (and,
+correspondingly, sound speed) in the simulated region.
+
+2. NUMERICAL METHODS AND MODEL
+The two-dimensional version of the Sheffield Advanced Code
+(SAC) is applied to carry out the simulations. The code is built on
+the basis of the Versatile Advection Code (VAC) by Tóth (1996),
+Tóth et al. (1998), Tóth (2000), and Keppens et al. (2003). SAC
+is the reconfigurable multi-dimensional ideal MHD solver which
+is designed to simulate the nonlinear interaction of an arbitrary
+perturbation with a gravitationally stratified background model,
+i.e., a model of the solar atmosphere, in magnetohydrostatic
+equilibrium. The code uses variable separation and hyperdiffusive and hyper-resistive terms (Stein & Nordlund 1998; Caunt &
+Korpi 2001; Vögler et al. 2005; Shelyag et al. 2008) to stabilize
+the solution against numerical instabilities and imperfections in
+the background model, caused by truncation errors. The main
+advantage of the implemented numerical technique is that it
+allows us to robustly simulate the macroscopic processes in a
+gravitationally stratified, magnetized plasma. A full description
+of the code, tests for various standard HD and MHD problems
+and the implemented numerical schemes are given in Shelyag
+et al. (2008).
+For the purpose of this paper the chosen two-dimensional
+numerical domain consists of four adjoined parts: the solar
+photospheric region including the temperature minimum, the
+chromosphere, the transition region and the solar corona. The
+upper boundary of the domain is located well within the coronal
+layers. As an initial background model, two solar atmosphere
+models are joined: the VALIIIC quiet Sun model of Vernazza
+et al. (1981) is used to simulate the region between the lower part
+of the photosphere; the transition region, and the region above
+the transition region is based on the McWhirter et al. (1975)
+atmosphere model. Logarithms of the density and temperature
+profiles along the vertical direction z are shown in Figure 1.
+The simulation domain with the equilibrium parameters is
+shown in Figure 3. The dependence of (1) the logarithm of
+the background pressure, log(P0 ), (2) the temperature, T, and
+(3) the magnetic field components, B0x and B0z , as functions
+of height z and horizontal distance x of the equilibrium model
+are plotted in four panels of Figure 3, respectively. Note that
+only the central part of the numerical box is shown here in the
+figures. The full numerical box is 4 Mm wide and 4 Mm high,
+and is resolved on 400 × 1976 gridpoints, respectively. The
+2
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+white contours represent the iso-plasma-β surfaces, labeled by
+their appropriate value of plasma-β. The orange lines are the
+equilibrium magnetic field lines in the figure and indicate the
+background field distribution in the computational domain. The
+method used to construct the structure of the open flux tube is
+explained in the next section. Horizontal dashed lines mark
+the approximate location of the different solar atmospheric
+levels, i.e., photosphere, chromosphere, TR and solar corona. In
+all the present simulations we employ non-reflective (“open”)
+boundary conditions for perturbed variables. This type of
+boundary conditions allows the linear and nonlinear waves to
+propagate through the domain boundaries without noticeable
+reflection or distortion.
+3. THE MAGNETIC FIELD CONFIGURATION
+AND DRIVER
+The well known self-similarity approach is used to construct
+the background non-potential magnetic field configuration. The
+main advantages of such type of magnetic field are the following.
+Self-similar magnetic fields have a rather simple analytical
+description. Compared to potential fields, the non-potential
+localized magnetic field configuration, which we use here,
+demonstrates a closer resemblance to intergranular magnetic
+field concentrations, observed in the solar photosphere, and to
+magnetic fields generated by dynamical simulations of magnetoconvection (see, e.g., Shelyag et al. 2010). Finally, self-similar
+magnetic fields can be created with a lower expansion factor
+compared to their counterparts with potential fields, thus it
+is not necessary to use additional localized magnetic field
+structures or less-natural periodic boundaries to prevent the
+field describing a less realistic expansion. Following the selfsimilarity description, the open magnetic flux tube configuration
+is obtained analytically from the following set of equations:
+Bx = −
+
+Bz =
+
+Figure 2. Vertical dependence of the ratio of the minimum to the maximum
+values of the sound speed taken along the cross section in the x-direction in the
+computational domain.
+
+where p is the background kinetic pressure, g is the solar
+gravitational acceleration and ρ is the background density. This
+method was used previously by Schlüter & Temesváry (1958),
+Deinzer (1965), Schüssler & Rempel (2005), Gordovskyy &
+Jain (2007), Shelyag et al. (2009), and others. The strength of
+the magnetic field at the footpoint region is B0 = 45 G. We
+are aware of the strength of present magnetic field is perhaps
+too low but it does make it possible to construct the flux tube
+without a strong opening at the solar corona region and thus
+makes it more practical to connect all four regions of the
+solar atmosphere. Low magnetic field strength is chosen not
+only for practical reasons. Full convective simulations of solar
+photosphere show that the intergranular lanes in the models of
+quiet solar granulation (with average unipolar magnetic flux
+50 G) are full of vertical magnetic fields which rarely reach
+kilogauss values and normally stay within 100G limit. Thus,
+the chosen 45 G magnetic field represents quiet intergranular
+magnetic field concentrations quite reasonably. A stronger
+magnetic field is obviously interesting to analyze due to its
+connection to various visible features in the solar photosphere.
+An enhanced magnetic field would result in a downward shift of
+the equipartition layer and in a stronger opening of the magnetic
+flux tube, if the side boundaries of the domain are not periodic
+(which we obviously want to avoid, since the main point of the
+study is a single flux tube). Nevertheless, the chosen magnetic
+field strength is certainly a good approximation for weak and
+most likely ubiquitous solar flux tubes in the quiet Sun.
+In Figure 2, we show the ratio of the minimum to the
+maximum values of the sound speed (Cmin /Cmax ) taken at each
+height in the computational domain as a function of z. This
+plot allows us to clearly gain insight into the influence of the
+constructed magnetic flux tube on the background model. In
+the photosphere and lower chromospheric region Cmin /Cmax
+is equal to unity. In the upper part of the chromosphere this
+ratio (Cmin /Cmax ) is decreasing strongly, due to the increase of
+magnetic pressure inside the flux tube. In the transition region
+the influence of the magnetic field has maximum effect, which is
+evidenced in Figure 2 as a peak at z = 1.95 Mm. In the coronal
+region, the ratio Cmin /Cmax has an approximately constant value
+of 0.82, i.e., the magnetic flux has a constant shape in this region.
+
+∂f
+· G (f ) ,
+∂z
+
+∂f
+· G (f ) ,
+∂x
+
+and
+f = x · B0z ,
+where B0z is the vertical z-component of the background
+magnetic field along the symmetry axis, and G is an arbitrarily
+chosen function which describes the horizontal profile (in twodimensional cartesian geometry) of the vertical magnetic field
+component. In the present case this function is chosen to be
+
+
+f 2
+G (f ) = A · exp −
+,
+f0
+where f0 is the so-called opening factor of the magnetic flux
+tube. It should be noted that the magnetic field structure, designed by the approach outlined above, is divergence-free by
+definition. This is a very important practical advantage for numerical studies, where keeping ∇ · B is a challenging task, see,
+e.g., Tóth et al. (1998) and Tóth (2000). The corresponding density and gas pressure deviations from their non-magnetic equilibrium counterparts in the domain are calculated by assuming
+the magneto-hydrostatic equilibrium condition, i.e.,
+ 2
+B
+(B · ∇) B + ∇
++ ∇p = ρg,
+2
+3
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+4
+Corona
+
+3.0•105
+
+4
+
+0.1
+
+Corona
+
+0.1
+
+Corona
+
+0.1
+
+4
+
+0.1
+
+4
+
+Fedun, Shelyag, & Erdélyi
+
+Corona
+
+6
+
+40
+
+-2
+
+1
+
+Photosphere
+
+Periodic driver
+
+0.0 0.4 0.8 1.2 1.6
+x [Mm] (158 grid points)
+
+1.0•105
+
+1
+
+Chromosphere
+
+1.0
+
+10.0
+
+0
+
+-2
+
+Photosphere
+
+0
+
+5.0•10
+
+Photosphere
+
+0
+
+0.0 0.4 0.8 1.2 1.6
+x [Mm] (158 grid points)
+
+2 Transition region
+Chromosphere
+
+1.0
+
+Periodic driver
+
+0.0 0.4 0.8 1.2 1.6
+x [Mm] (158 grid points)
+
+20
+
+10.0
+
+1
+100.0
+0.0
+100
+
+4
+
+Periodic driver
+
+30
+
+B0Z [Gauss]
+
+2 Transition region
+
+1
+100.0
+0.0
+100
+
+-4
+
+1.5•105
+
+z [Mm] (1976 grid points)
+
+10.0
+
+100.0
+0.0
+100
+
+0
+
+1.0
+
+2
+B0X [Gauss]
+
+Chromosphere
+
+T [K]
+
+2 Transition region
+
+z [Mm] (1976 grid points)
+
+10.0
+
+z [Mm] (1976 grid points)
+
+log(P0) [N/m2 ]
+
+z [Mm] (1976 grid points)
+
+0
+
+2.0•105
+
+3
+
+0.1
+
+1.0
+
+3
+
+0.1
+
+Chromosphere
+
+3
+
+0.1
+
+2 Transition region
+
+4
+
+2.5•105
+
+2
+
+0.1
+
+3
+
+10
+
+-4
+
+100.0
+0.0
+100
+
+-6
+
+Photosphere
+
+0
+
+Periodic driver
+
+0
+
+0.0 0.4 0.8 1.2 1.6
+x [Mm] (158 grid points)
+
+Figure 3. Initial state of the computational configuration. The logarithm of the background pressure, log(P0 ) (a), the temperature, T (b), the magnetic field components,
+B0x (c) and B0z (d) are shown. The z-axis corresponds to altitude and the x horizontal axis is parallel to the solar surface. The orange lines visualize the magnetic field
+structure of the flux tube. The white lines are the iso-plasma-β contours, labeled by their values. The photosphere, chromosphere, transition region, and corona levels
+are highlighted schematically in the plot. Also, the position of the periodic driver (red ellipse) is illustrated at the footpoint region.
+(A color version of this figure is available in the online journal.)
+
+The driver is located at the footpoint region inside the flux tube
+just under the height corresponding to the temperature minimum
+of the solar atmosphere. The location is shown schematically in
+Figure 3 as a small red ellipse. In all the simulations for this study
+we have used a periodic driver with the frequency 33.3 mHz (or,
+equivalently, with the period of Δt = 30 s), similar to acoustic
+sources used by Bogdan et al. (2003), Hasan & van Ballegooijen
+(2008), and Fedun et al. (2009). Theory predicts (e.g., Musielak
+et al. 1994) a massive generation of high-frequency acoustic
+waves in the sub-photospheric region of the Sun, but, according
+to observational and numerical (one-dimensional) results of e.g.,
+Fossum & Carlsson (2005), the acoustic energy flux created by
+these waves is too low to contribute in a dominant way to solar
+heating. Nevertheless, the generation of these high-frequency
+waves is not yet settled and additional studies are needed. Highfrequency harmonic vertical and horizontal velocity drivers
+allow us to simulate wave coupling of the photosphere and
+corona. Further, analysis of these type of waves can be exploited
+for diagnostic purposes giving a unique opportunity for insight
+into sub-resolution properties of the solar wave guides. The Vx
+and Vz components of the velocity perturbation have Gaussian
+spatial profiles in the x and z directions,
+
+
+ x−x 2  z−z 2 
+2π t
+0
+0
+,
+(1)
+Vx,z = A sin
+exp− Δx + Δz
+Δt
+
+waves (FMAWs). Of course, due to the strong decrease of the
+equilibrium density (see Figure 3), the sound speed changes
+with height dramatically and modes may interchange their character. In addition to that, the implemented magnetic structure
+imposes a change in the equilibrium density in both x and z directions. This latter feature results in additional changes to the
+sound speed in both the vertical and the horizontal directions.
+The local phase speeds for slow and fast MAWs also depend
+on the angle between the direction of the wave propagation and
+the magnetic field lines. According to MHD wave theory (see
+the recent, excellent textbook by Goedbloed & Poedts 2004),
+within the high plasma-β region (CS > VA ), SMAWs propagate
+mainly along magnetic field lines with the local Alfvén speed
+VA . The FMAW is allowed to propagate in any direction. Along
+the direction of field lines the FMAW travels with the sound
+speed CS and in the direction perpendicular
+√ to the field lines it
+propagates with the phase speed Vph = (CS2 + VA2 ).
+On the other hand, within the region where the plasma-β is
+low (VA > CS ), the MHD slow wave propagates approximately
+with the local sound speed CS and the fast wave propagates with
+the local Alfvén speed VA along the magnetic field lines. The
+angular dependence for the phase speeds of the slow and fast
+MAWs are identical in the high plasma-β region. Slow waves are
+prohibited from traveling perpendicularly to the magnetic field
+lines for both, high and low plasma-β regions. These well known
+defining features are recalled in order to help us to interpret
+the numerical results. Of course, in a structured and strongly
+inhomogeneous (e.g., stratified) magnetized plasma the modes
+are much harder to identify. They may be coupled to each other,
+or may transform from one mode to another while traveling
+through the medium.
+In this paper, we analyze waves generated by the vertical and
+horizontal drivers in particular regions of the solar atmosphere
+that are side by side. We choose this principle of the presentation
+to make it easier to compare the interaction of the oscillations
+generated by these sources with the different regions of solar
+atmosphere.
+The time evolution of parallel (V ) and transverse (V⊥ )
+components of the velocity produced by the vertical periodic
+
+where A is the amplitude of the driver, x0 and z0 are the positions
+of the source center in the x and z directions, respectively.
+4. SIMULATIONS
+In our two-dimensional numerical simulations, as it was described previously, we implemented rather realistic density and
+temperature profiles. With such complicated flux tube structures
+it is not easy to identify the different types of propagating waves.
+Thus, we work with the velocity components perpendicular (V⊥ )
+and parallel (V ) to the background magnetic field instead of the
+velocity components defined in the Cartesian geometry. We suggest that the V component of the velocity corresponds mainly
+to the slow magneto-acoustic waves (SMAWs) and the V⊥ component of the velocity corresponds to the fast magneto-acoustic
+4
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 4. Snapshots of the field-aligned (V ) and transverse (V⊥ ) components of the velocity response showing the temporal development of the initial perturbation
+generated by 30 s vertical periodic driver at different times in the open magnetic flux tube. The color scale shows the V and V⊥ perturbations in km s−1 at times given
+in the bottom left corner of each pair of images. The color curves (i.e., white and orange) are same as on Figure 3. The angle and length of the white arrows correspond
+to the velocity vector field.
+(A color version of this figure is available in the online journal.)
+
+driver, specified by Equation (1), with amplitude A = 500 m s−1 ,
+is shown in Figure 4. Illustrative snapshots are captured at times
+t = 24, 171, 190, and 223 s, respectively. Note that we will also
+use these time moments to show the simulation results with the
+horizontal driver (see Figure 6).
+In the high plasma-β region, where the sound speed is
+greater than the Alfvén speed (CS  VA ), e.g., applicable in
+photospheric and lower chromospheric regions, the generated
+waves propagate linearly and isotropically with an increase in
+amplitude due to the approximately constant sound speed CS
+at the lower part of the computational domain (see two upper
+panels of Figures 4 and 5). It is clear that the waves are strongly
+acoustic in their character.
+Next, we observe a very similar behavior of wave propagation
+at the lower part of the computational domain for waves excited
+by the horizontal periodic source (see Figures 6 and 7). It is
+virtually impossible to distinguish between the slow and fast
+waves at their initial stage in both types of simulation, as these
+waves are fully coupled. On the other hand, the vertical source
+of wave perturbations produces symmetric compressions and
+decompressions of the plasma inside the flux tube. The values
+of the relative pressure difference ΔP /P0 and temperature ΔT
+perturbations are shown in Figure 5. After this initial stage
+two waves (slow and fast), generated by vertical driver, can
+be observed in the simulation domain. As is evident from the
+
+snapshot taken at time t = 170 s (see upper right panel of
+Figure 4), in the region where the plasma-β is bounded within
+10 (lower end) to 1.0 (upper end), the V and V⊥ components
+of the velocity have different amplitudes and slightly different
+propagation angles.
+The amplitude of V of the SMAW reaches approximately
+6 km s−1 in the region below the TR from an initial value
+of 0.5 km s−1 in the photosphere while the V⊥ amplitude
+of the FMAW grows to the smaller value of 2.8 km s−1 .
+Thus, the main part of wave energy produced by the vertical
+periodic driver is carried along the central part of the magnetic
+flux tube by the slow magneto-acoustic wave component. The
+FMAW is not observed along the axis of the magnetic flux
+tube. Since this latter wave propagates with a non-zero angle
+to the tube axis, it can be mainly detected at the edges of
+the flux tube. The propagation of the mainly longitudinal
+FMAW is visible as a symmetric motion of the magnetic field
+lines. In snapshots of the longitudinal V and the transversal
+V⊥ velocity perturbations in Figure 4, it is apparent that
+the position of the magnetic field lines (highlighted as the
+orange lines in Figure 4) show symmetric expansions and
+contractions of the magnetic flux tube. This change of the
+magnetic flux tube diameter can be considered as an evidence
+of the sausage mode generated by the periodic vertical driver
+(see, e.g., Dorotovič et al. 2008), therefore we identify this
+5
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 5. Snapshots of the relative pressure difference ΔP /P0 and temperature ΔT perturbation from the initial state in a magnetic flux tube at different times (same
+as Figure 3). The color scale shows the relative difference of pressure and temperature (in K) perturbations. The magnetic field lines and iso-plasma-β contours are
+the same as in Figure 3.
+(A color version of this figure is available in the online journal.)
+
+wave mode as a sausage wave guided by the magnetic flux tube
+structure.
+Before analyzing our results regarding the horizontal driver,
+we should recall the recent paper by Goossens et al. (2009) on
+the nature of kink MHD waves in solar flux tubes. Goossens
+et al. (2009) have confirmed that in a magnetic flux tube, kink
+waves are incompressible waves with negligible pressure perturbations to a high degree of accuracy. In the central part of the
+open flux tube (see Figure 6), where the magnetic field is strong,
+we observe that the waves propagate upward with no noticeable gas or temperature perturbation (see Figure 7). We identify
+these perturbations to be the kink FMAW, since they have the
+same properties as described by Goossens et al. (2009). The amplitude of the initial perturbation of Vz (which in this particular
+case is equal to V ) increases from 0.5 km s−1 up to 2 km s−1 ,
+and V⊥ increases up to 0.7 km s−1 during the first few periods.
+Therefore, similarly to the case of wave excitation by the
+vertical driver, the wave energy may be transferred to the upper
+part of solar atmosphere by longitudinal motions. This is an
+important point in regard to which type of wave modes generated
+by photospheric motions are most likely to supply energy for
+plasma heating in the upper part of the solar atmosphere.
+In the upper part of the chromosphere, where the plasma-β
+is equal to or less than unity, all types of waves generated by
+
+both types of drivers (see Figures 4 and 6) have changed their
+character of propagation from linear to nonlinear. Hence, wave
+fronts become sharper and resemble shocks as they propagate
+upward into the region which has a stronger decrease in the
+background density profile. Due to different phase speeds of
+the waves, generated by the vertical and the horizontal drivers,
+as we pointed out previously, the time at which the wave
+perturbations penetrate and leak through the TR to the solar
+corona are different. The lower left panel of Figure 4 shows the
+moment of wave penetration into the solar corona (t ∼
+=190 s).
+On the right part of the panel, which depicts V⊥ , two shock-like
+structures are observed just above the TR. These shocks have
+similar circular shapes. On the left part of this panel (V ), at the
+axis of the magnetic flux tube, we can clearly see only one shock
+wave, which corresponds to the lower shock wave on the right
+part (i.e., V⊥ ) of the panel. We suggest that the upper shock is
+related to FMAW mode and the lower shock is a SMAW. These
+two shocks have approximately the same maximum velocity
+values.
+The slow magneto-acoustic shock wave propagates along the
+central part of the magnetic flux tube up to the coronal region. Opposite to that, the maximum amplitude of the fast
+magneto-acoustic (shock) wave is localized in the TR (see
+the lower left panel of Figure 4). Following this argument we
+6
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 6. Same as Figure 4 but generated by 30 s periodic horizontal driver.
+(A color version of this figure is available in the online journal.)
+
+comparison with the theory. Accordingly, as we have noted
+previously, the horizontal driver (Figure 6) generates fast kink
+MAWs at the central part of the tube. These type of waves
+can be identified by asymmetric motions of the magnetic
+field lines (orange lines in Figure 6) along the vertical, nonperturbed axis of the flux tube. The horizontal driver also
+generates symmetric, compressible motions (see Figure 7),
+similar to motions generated by the vertical driver, at the
+periphery of the magnetic flux tube. These latter waves are
+also FMAW, but do not displace the tube’s axis. Such type
+of motion is visible in Figure 6 as a symmetric motion of
+the magnetic field lines (the orange lines). We appreciate
+that is difficult to identify the changes in magnetic field line
+positions in the static images. Therefore, to help readers, we
+also provided movies in a downloadable electronic format, that
+can be found at http://swat.group.shef.ac.uk. We also found that
+the largest portion of the wave energy is guided along the
+peripheral parts of the open magnetic flux tube, in contrast
+to the vertical driver case. In the coronal region, i.e., after
+penetration through the TR, the amplitude of the MHD waves,
+generated by the horizontal driver, reaches about 6.5 km s−1 .
+This value is two times less than in the case of the vertical driver.
+
+conclude that the main source of TR surface wave generation
+is the fast magneto-acoustic mode, i.e., generated by horizontal
+motions (see Figure 8). Note that in this figure only perturbations of the relative pressure difference (ΔP /P0 ) and temperature (ΔT ), zoomed out for better visibility, at the TR region are
+shown.
+In the lower right panel of Figure 6 we show the next stage of
+wave propagation and evolution, captured at a representative
+time of t = 223 s. The shock wave associated with the
+slow magneto-acoustic mode (V ) propagates upwards with
+an approximately constant shock amplitude of 15 km s−1 .
+The amplitude of this velocity component is about 10 times
+(i.e., an order of magnitude) greater than the amplitude of
+the transversal velocity component V⊥ . This feature has an
+important consequence for the energy propagation and supply
+to the solar corona.
+Also, both slow and fast MAWs carry some part of their
+energy back to the photospheric region due to reflection from
+the TR (Schunker & Cally 2006; Fedun et al. 2009).
+Due to the structure of the magnetic configuration under
+consideration, only the central part of the flux tube, where the
+magnetic field is strong (along the z-axis), can be used for
+7
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 7. Relative pressure difference ΔP /P0 and temperature ΔT perturbation from the initial state in the magnetic flux tube at different times. Wave excitation is
+due to periodic horizontal motion. The color scale shows the relative difference of pressure and temperature perturbations. The colored (i.e., white and orange) curves
+are the same as in Figure 5.
+(A color version of this figure is available in the online journal.)
+
+Consequently, we can summarize that the energy is carried to
+the upper layers of the solar atmosphere mainly by the waves
+generated by vertical motions (see the lower right panel of
+Figure 6).
+Also, similar to the generation of surface waves by the
+vertical driver, the horizontal motions at the photospheric region
+have a strong influence on surface wave excitation in the TR.
+To illustrate this, we have plotted a series of snapshots of
+relative pressure difference (ΔP /P0 ) and temperature (ΔT )
+perturbations at the TR at different representative times t = 234,
+266, 288, and 317 s (see Figure 9).
+The motions found in the TR have different features, i.e., they
+are symmetric to the axis of the open magnetic flux tube in the
+case of the vertical driver (see Figure 8), and they are asymmetric
+(see Figure 9) in the case of the horizontal driver. However, the
+amplitudes of the guided waves generated by the different types
+of sources are similar. The vertical (V ) and the horizontal (V⊥ )
+periodic motions produce variations of the temperature with
+amplitudes up to 150,000 K in this thin layer. These variations
+are approximately 10% of the temperature of the lower part of
+the solar corona and therefore can perhaps be detected by the
+currently available instruments.
+
+To examine the dynamical processes in our simulations in
+greater detail, we have plotted time–distance diagrams of the
+parallel (V ) and the transverse (V⊥ ) components of velocity.
+Figure 10 presents the simulation results in a different format.
+The time–distance diagrams are useful for relatively accurate
+measurements of the wave propagation speeds. As we have
+shown above, both types of the photospheric drivers generate
+the waves which, due to decoupling, can be resolved clearly
+only in the low plasma-β region.
+The upper and lower panels of Figure 10 are plotted for the
+cases of vertical and horizontal driving sources, respectively.
+The thin white lines in these plots correspond to the constant
+plasma-β levels with the values of 100, 10, 1, and 0.1. We note,
+that these time–distance diagrams are taken at x = 2.0 Mm, i.e.,
+along the axis of the open magnetic flux tube.
+During the first three driving periods, i.e., within the first
+90 s of the simulation, the vertical and horizontal harmonic
+sources produce linear waves, which propagate with an approximately constant speed of 11 km s−1 . After that, the
+steepness of the wavefront starts increasing due to the background stratification of the model. The changes of the constant plasma-β contour shapes are observed in the upper
+8
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 8. Time series of the relative pressure difference ΔP /P0 and temperature ΔT perturbation showing the development of a guided wave at the transition region
+from the vertical harmonic source. Only the zoomed out portion centered around the transition region is shown in the plots.
+(A color version of this figure is available in the online journal.)
+
+Figure 9. Same as Figure 8 but generated by the horizontal periodic driver (Equation (1)).
+(A color version of this figure is available in the online journal.)
+
+panels of Figure 10. These changes occur due to compression and rarefaction of the SMAW, as we have analyzed pre-
+
+viously. There are no such variations in the perpendicular
+component of the velocity V⊥ for either type of driver. The
+9
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 10. Altitude vs. time rendering of transverse (V⊥ ) and field-aligned (V ) components of the velocity at x = 2.0 Mm, for vertical (upper panels) and transverse
+driving of perturbations. The white lines show the altitude variations of selected iso-plasma-β contours with time, labeled by their appropriate value.
+(A color version of this figure is available in the online journal.)
+
+steepening of the first SMAW, i.e., propagating speed, is faster
+than that of the following compression waves (see the two upper
+panels of Figure 10). No such behavior is observed for waves
+generated by the horizontal driver. The phase speeds and the
+amplitudes of slow and fast MAWs have increased after leaking
+into the corona region.
+The propagation speed, i.e., phase speed of the wave associated with V and generated by a vertical driver, reaches a value
+equal to 26 km s−1 and has an amplitude 15 km s−1 . The waves
+associated with V⊥ and generated by the same photospheric
+driver travels in the coronal region much faster, with velocities
+up to 100 km s−1 , but with a negligible value of amplitude, i.e.,
+less than 0.5 km s−1 (along the axis of the tube). The phase
+speeds of the waves excited by the horizontal driver are the
+same as for the vertical driver due to their similar nature, but
+their amplitudes are different. In the coronal region the value of
+the V component increases up to 6.5 km s−1 and the value of
+V⊥ up to 3 km s−1 . Wave reflection from the TR at x = 2.0 Mm
+is clearly visible on the time–distance diagrams in the V and
+V⊥ components of the velocity for the horizontal driver.
+Next, we construct the time–distance diagrams for both the
+V and V⊥ velocity components in the horizontal direction at
+different heights of the solar atmosphere. The full movies of
+the phase speed variation with height, i.e., the evolution of
+
+the generated waves in the computational domain, are again
+available at the Web site http://swat.group.shef.ac.uk.
+Figures 11 and 12 are the ω–k diagrams of the V and
+V⊥ velocity components at representative heights 0.85 Mm
+and 1.5 Mm, respectively. The upper and lower panels of
+Figures 11 and 12 correspond to the wave spectrum generated
+in the computational domain by the vertical and horizontal
+drivers, respectively. The left and right panels in both figures
+correspond to the vertical (V ) and horizontal (V⊥ ) components
+of the velocity. Figure 11 (i.e., the spectrum taken at 0.85 Mm)
+allows us to see and interpret clearly the signature of standing
+modes being set up within the chromospheric cavity (see Erdélyi
+et al. 2007) generated by both vertical (two upper panels) and
+horizontal (two lower panels) drivers.
+For waves excited by a strongly localized driver (e.g., point
+source) this will produce single dots only in an ω–k diagrams
+that correspond to different harmonics of the standing mode.
+In our simulations we have used a velocity perturbation driver
+with Gaussian spatial profiles in the x and z directions (see
+Equation (1)). Such a source has a wide power spectrum, thus in
+our ω–k diagrams the standing modes appear as wider horizontal
+lines. The localized horizontal areas with the high signal power
+settle along a straight line, which is due to the approximately
+constant sound speed (see Figure 2) in the lower part of the
+10
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 11. ω–k diagrams of the V and V⊥ velocity components taken along the horizontal cross section at the chromosphere region, i.e., at 0.85 Mm in the vertical
+direction. The upper and lower panels correspond to the V and V⊥ velocity components generated by the vertical and horizontal photospheric drivers defined by
+Equation (1), respectively.
+(A color version of this figure is available in the online journal.)
+
+to standing modes is increasing with wave number due to the
+influence of the cavity produced by the open flux tube (see
+Figure 12). Also, Figure 12 (see the left and the right lower
+parts) shows the presence of propagating slow and fast waves
+generated by the photospheric horizontal driver, which can be
+identified in the ω–k diagrams as two straight ridges. These
+ridges have a different inclination to the wave number axis k,
+so they correspond to waves propagating with different phase
+speeds. Only one ridge is observed at 1.5 Mm with the vertical
+driver (see the two upper panels of Figure 12).
+Next, snapshots of the dispersion diagrams taken below the
+transition region (i.e., at heights h = 1.8 Mm and 1.85 Mm)
+and in the solar coronal region (i.e., at heights h = 2.53 and
+3.03 Mm), are shown in Figures 13 and 14 are shown. In these
+parts of the computational domain magnetic field lines of the
+open flux tube (see Figure 3) are dominantly vertical. Thus,
+horizontal cross sections (which we have used to construct
+the time–distance and ω–k diagrams) are perpendicular to the
+magnetic field lines. In the lower part of the computational
+domain, the horizontal cross sections have various angles to the
+
+computational domain in the horizontal direction along which
+the spectrum is calculated. The wave spectrum generated by
+vertical driver of ∼33.3 mHz contains evidence of the higher
+harmonics at ∼66.6, 100 mHz, and so on (see two upper
+panels of Figure 11). In the case of wave excitation by the
+horizontal driver (see the two lower panels of Figure 11) we
+can observe only four harmonics (at 33.3, ∼66.6, ∼100, and
+∼133 mHz) at the chromospheric region. The area covered by
+higher harmonics of standing modes driven by the vertical driver
+is much larger than the corresponding area in the ω–k diagrams
+computed for the case of the horizontal driver. Therefore, we
+suggest that vertical motions are responsible for the formation
+of the standing mode pattern within the chromospheric cavity.
+Figure 12 demonstrates the wave spectrum at the upper part of
+the chromosphere, i.e., at height equal to 1.5 Mm. In the central
+part of the flux tube, where the magnetic field is strong, the
+sound speed has a minimum value (see Figure 2). The plasma-β
+in this region is ∼10, therefore the magnetic flux tube starts
+to work as a cavity in a horizontal direction. Notably, at a
+height of 1.5 Mm the gradient of the signals corresponding
+11
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+Figure 12. Same as Figure 11 but the velocity components are taken along the horizontal cross section at the vertical height 1.5 Mm.
+(A color version of this figure is available in the online journal.)
+
+Due to the wave reflection from the transition region and
+mode conversion within the plasma-β ∼ 1 region, we can
+see propagating waves with different phase speeds (see the
+four left snapshots of Figure 13 for representative heights
+h = 1.8 Mm and 1.85 Mm). The process of mode conversion
+within the plasma-β ∼ 1 region has been previously studied
+analytically and semi-analytically for non-realistic models by,
+e.g., Zhugzhda (1979), Cally (2001, 2007), and others. The
+enhanced power at certain frequencies is caused by partial
+reflections from the steep temperature and density profiles at
+the transition region in combination with the cavity. The pattern
+is observed in both the vertical (the upper four panels) and
+horizontal (the lower four panels) components of the velocity. As
+was mentioned previously, the energy carried by the horizontal
+component has its main impact on the guided waves in the
+transition region. Also, in the snapshot at h = 1.86 (see the
+second upper panel of Figure 13) the two types of ridges,
+indicated by the different gradients to the k-axis appear at the
+same location.
+In the coronal region (see four snapshots in the right part of
+Figure 13 for the typical heights h = 2.53 Mm and 3.03 Mm),
+only one ridge is observed. The phase speed of the propagating
+wave is approximately constant and equal to ∼100 km s−1 ,
+
+magnetic field lines of the magnetic flux tube due to a curvature
+of the constructed magnetic field.
+Because of this, interpretation of the ω–k diagrams where
+the magnetic field lines are not straight, i.e., in the photosphere
+and lower chromosphere regions, is not a straightforward task.
+In our simulations the region where the plasma-β is equal to
+unity is located just under the transition region, where the solar
+atmosphere has a steep temperature gradient. Figure 13 depicts
+the power spectrum and phase speeds of the waves generated
+by the photospheric vertical driver in this region. The four
+upper panels captured for the V velocity component while the
+four lower panels are plots of the V⊥ velocity component. The
+presence of a number of ridges in this region can be explained
+from a magneto-seismological point of view. In our case, density
+in the region below the transition region and, thus the sound
+speed (see Figure 2), changes not only in the vertical z-direction
+(see Figure 1) but also in the horizontal x-direction. In Figure 13
+we can clearly observe the signature of eigenmodes similar to
+the spectrum of solar acoustic oscillations. We suppose this
+ridge pattern was excited because the background model we use
+represents a cavity, bounded by the magnetic flux tube walls, in
+some way resembling a cavity, created by the upper and lower
+turning points in the solar interior.
+12
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+Figure 13. ω–k diagrams of the vertical V and horizontal V⊥ velocity components in the transition and solar corona regions. Fourier transform performed on
+time–distance series are taken at heights h = 1.8, 1.85, 2.53, and 3.03 Mm. The four panels are the ω–k diagrams of V and V⊥ velocity components excited by vertical
+photospheric driver (Equation (1)) in each row, respectively.
+(A color version of this figure is available in the online journal.)
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+-1
+
+Figure 14. Same as Figure 13 but the V and V⊥ velocity components are now generated by a horizontal photospheric driver.
+(A color version of this figure is available in the online journal.)
+
+Figure 12). Thus, we can deduce that the vertical driver more
+strongly excites the eigenmodes near the transition region within
+the semi-circular shaped cavity.
+
+slightly increasing with height. This is the same order of
+magnitude that has been observed with CoMP (see, e.g.,
+Tomczyk & McIntosh 2009).
+In Figure 14 we show a series ω–k diagrams taken at the
+same heights as the diagrams described above but for V and
+V⊥ velocity components generated by a horizontal photospheric
+driver. Opposite to the previous case of wave generation by the
+vertical driver, the wave spectrum pattern within the transition
+region, excited by the horizontal driver, mainly keeps the
+structure of the wave spectrum in the upper chromosphere (see
+
+5. CONCLUSIONS
+In the present paper, we have made an attempt to numerically
+simulate wave generation and propagation in an open magnetic
+flux tube. It has been shown that standing modes within the
+chromospheric cavity are generated mainly by vertical motions
+13
+
+The Astrophysical Journal, 727:17 (14pp), 2011 January 20
+
+Fedun, Shelyag, & Erdélyi
+
+at the footpoint of an open magnetic flux tube. Regardless
+of the driver direction, the largest proportion of energy is
+carried to the corona via the V velocity component. It was
+also shown that the surface waves generated at the TR have
+most of their power in the perpendicular velocity component
+V⊥ , irrespective of whether the driver is horizontal or vertical.
+Hence, the oscillatory response of the flux tube at the TR and
+above in the corona is weakly dependent on whether the velocity
+of the driver is parallel or perpendicular to the direction of
+the magnetic field at the footpoint. These facts have important
+implications for high spatial and temporal observations of lower
+atmospheric flux tubes by, e.g., Hinode, ROSA, and the planned
+ATST, suggesting that the oscillatory response of such flux tubes
+should be similarly independent of photospheric driver, e.g., the
+previously mentioned TR surface waves and dominant vertical
+velocity component power.
+Unfortunately, we cannot yet compare our results directly
+with the time–distance and FFT analysis of the CoMP observational data (Tomczyk & McIntosh 2009) for a number of reasons.
+Firstly, the spatial resolution of CoMP is 9 arcsec, which is about
+6.5 Mm. In our simulations we have used a numerical domain
+of 4 Mm × 4 Mm, thus CoMP cannot resolve the fine spatial
+structure generated in our model. Second, the S/N of the CoMP
+instrument decreases with frequency and at the frequency above
+5 mHz the level of noise is comparable with the signal, and in
+our case the frequency is well above this range. In our paper,
+we have analyzed the dependence of ω and the perpendicular
+wavenumber whereas Tomczyk & McIntosh (2009) estimated
+the wavenumber parallel to observing magnetic field. However,
+it is possible to carry out such a study with our present data
+and this will be the subject of future work. Future work will
+also include non-adiabatic effects, such as radiative losses from
+coronal shocks, and a detailed non-ideal equation of state. Another possibility would be to reduce the spatial resolution of
+our numerical domain and, thus, increase the physical size of
+the solar atmospheric model. Either way, the present paper is a
+step toward the wider interpretation of CoMP (and other coronal
+wave) observations and we hope giving here impetus to design
+further such important parallel to observing campaigns.
+
+Cargill, P. J., Spicer, D. S., & Zalesak, S. T. 1997, ApJ, 488, 854
+Carlsson, M., & Bogdan, T. J. 2006, Phil. Trans. R. Soc. A, 364, 395
+Caunt, S. E., & Korpi, M. J. 2001, A&A, 369, 706
+Deinzer, W. 1965, ApJ, 141, 548
+De Moortel, I. 2009, Space Sci. Rev., 149, 65
+De Pontieu, B., & Erdélyi, R. 2006, Phil. Trans. R. Soc. A, 364, 383
+De Pontieu, B., Erdélyi, R., & De Moortel, I. 2005, ApJ, 624, L61
+De Pontieu, B., Erdélyi, R., & James, S. P. 2004, Nature, 430, 536
+Dı́az, A. J., & Roberts, B. 2006, A&A, 458, 975
+Dorotovič, I., Erdélyi, R., & Karlovský, V. 2008, in IAU Symp. 247, Identification of Linear Slow Sausage Waves in Magnetic Pores, ed. R. Erdélyi & C.
+A. Mendoza-Briceño (Cambridge: Cambridge Univ. Press), 351
+Erdélyi, R. 2006, Phil. Trans. R. Soc. A, 364, 351
+Erdélyi, R., & Fedun, V. 2007, Science, 318, 1572
+Erdélyi, R., Malins, C., Tóth, G., & De Pontieu, B. 2007, A&A, 467, 1299
+Erdélyi, R., & Taroyan, Y. 2008, A&A, 489, L49
+Fedun, V., Erdélyi, R., & Shelyag, S. 2009, Sol. Phys., 258, 219
+Fossum, A., & Carlsson, M. 2005, Nature, 435, 919
+Goedbloed, J. P. H., & Poedts, S. 2004, Principles of Magnetohydrodynamics
+(Cambridge: Cambridge Univ. Press)
+Goossens, M., Terradas, J., Andries, J., Arregui, I., & Ballester, J. L. 2009, A&A,
+503, 213
+Gordovskyy, M., & Jain, R. 2007, ApJ, 661, 586
+Hasan, S. S., & van Ballegooijen, A. A. 2008, ApJ, 680, 1542
+Hasan, S. S., van Ballegooijen, A. A., Kalkofen, W., & Steiner, O. 2005, ApJ,
+631, 1270
+Keppens, R., Nool, M., Tóth, G., & Goedbloed, J. P. 2003, Comput. Phys.
+Commun., 153, 317
+Khomenko, E., & Collados, M. 2006, ApJ, 653, 739
+Khomenko, E., Collados, M., & Felipe, T. 2008, Sol. Phys., 251, 589
+Kuridze, D., Zaqarashvili, T. V., Shergelashvili, B. M., & Poedts, S. 2009, A&A,
+505, 763
+Mathioudakis, M., Jess, D. B., & Erdélyi, R. 2011, Space Sci. Rev., submitted
+McWhirter, R., Thonemann, P., & Wilson, R. 1975, A&A, 40, 63
+Musielak, Z. E., Rosner, R., Stein, R. F., & Ulmschneider, P. 1994, ApJ, 423,
+474
+Ofman, L. 2009, Space Sci. Rev., 149, 153
+Ruderman, M. S., & Erdélyi, R. 2009, Space Sci. Rev., 149, 199
+Ruderman, M. S., Verth, G., & Erdélyi, R. 2008, ApJ, 686, 694
+Schunker, H., & Cally, P. S. 2006, MNRAS, 372, 551
+Schüssler, M., & Rempel, M. 2005, A&A, 441, 337
+Schlüter, A., & Temesváry, S. 1958, in IAU Symp. 6, Electromagnetic Phenomena in Cosmical Physics, ed. B. Lehnert (Cambridge: Cambridge Univ.
+Press), 263
+Scullion, E., Erdélyi, R., Fedun, V., & Doyle, J. 2010, ApJ, submitted
+Shelyag, S., Fedun, V., & Erdélyi, R. 2008, A&A, 486, 655
+Shelyag, S., Mathioudakis, M., Keenan, F. P., & Jess, D. B. 2010, A&A, 515,
+A107
+Shelyag, S., Zharkov, S., Fedun, V., Erdélyi, R., & Thompson, M. J. 2009, A&A,
+501, 735
+Stein, R. F., & Nordlund, A. 1998, ApJ, 499, 914
+Taroyan, Y., & Erdélyi, R. 2009, Space Sci. Rev., 149, 229
+Tomczyk, S., & McIntosh, S. W. 2009, ApJ, 697, 1384
+Tóth, G. 1996, Astrophys. Lett. Commun., 34, 245
+Tóth, G. 2000, J. Comput. Phys., 161, 605
+Tóth, G., Keppens, R., & Botchev, M. A. 1998, A&A, 332, 1159
+Vernazza, J. E., Avrett, E. H., & Loeser, R. 1981, ApJS, 45, 635
+Verth, G., & Erdélyi, R. 2008, A&A, 486, 1015
+Verth, G., Erdélyi, R., & Goossens, M. 2010, ApJ, 714, 1637
+Verth, G., Erdélyi, R., & Jess, D. B. 2008, ApJ, 687, L45
+Vögler, A., Shelyag, S., Schüssler, M., Cattaneo, F., Emonet, T., & Linde, T.
+2005, A&A, 429, 335
+Zaqarashvili, T. V., & Skhirtladze, N. 2008, ApJ, 683, L91
+Zhugzhda, Y. D. 1979, SvA, 23, 42
+
+The authors thank The University of Sheffield (UK), Queen’s
+University Belfast (UK), and STFC (UK) for the financial
+support they received. R.E. acknowledges M. Kéray for patient
+encouragement and is grateful to NSF, Hungary (OTKA, Ref.
+No. K67746).
+REFERENCES
+Andries, J., van Doorsselaere, T., Roberts, B., Verth, G., Verwichte, E., &
+Erdélyi, R. 2009, Space Sci. Rev., 149, 3
+Banerjee, D., Erdélyi, R., Oliver, R., & O’Shea, E. 2007, Sol. Phys., 246, 3
+Bogdan, T. J., et al. 2003, ApJ, 599, 626
+Cally, P. S. 2001, ApJ, 548, 473
+Cally, P. S. 2007, Astron. Nachr., 328, 286
+
+14
+
+
