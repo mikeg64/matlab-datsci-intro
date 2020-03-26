@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red213\green80\blue0;\red0\green95\blue206;\red60\green60\blue60;
+\red60\green60\blue60;\red60\green118\blue61;\red160\green32\blue240;}
+{\*\expandedcolortbl;;\csgenericrgb\c83529\c31373\c0;\csgenericrgb\c0\c37255\c80784;\csgenericrgb\c23529\c23529\c23529;
+\csgenericrgb\c23529\c23529\c23529;\csgenericrgb\c23529\c46275\c23922;\csgenericrgb\c62745\c12549\c94118;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sb225\sa75\partightenfactor0
+
+\f0\fs36 \cf2 topics to introduce\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa225\partightenfactor0
+\ls1\ilvl0
+\fs21 \cf2   1  \cf0 Imporating data and using tables - {\field{\*\fldinst{HYPERLINK "https://uk.mathworks.com/help/matlab/tables.html?searchHighlight=data%20tables&s_tid=doc_srchtitle"}}{\fldrslt \cf3 https://uk.mathworks.com/help/matlab/tables.html?searchHighlight=data%20tables&s_tid=doc_srchtitle}} \
+  2  regression analysis   - {\field{\*\fldinst{HYPERLINK "https://uk.mathworks.com/help/matlab/data_analysis/linear-regression.html"}}{\fldrslt \cf3 https://uk.mathworks.com/help/matlab/data_analysis/linear-regression.html}} \
+  3  pca - {\field{\*\fldinst{HYPERLINK "https://uk.mathworks.com/help/stats/principal-component-analysis-pca.html?searchHighlight=pca&s_tid=doc_srchtitle"}}{\fldrslt \cf3 https://uk.mathworks.com/help/stats/principal-component-analysis-pca.html?searchHighlight=pca&s_tid=doc_srchtitle}} \
+  4  Working with categorical variables \
+  5  classification using discriminant analysis - {\field{\*\fldinst{HYPERLINK "https://uk.mathworks.com/help/stats/classify.html?searchHighlight=classify%20discriminant%20analysis&s_tid=doc_srchtitle"}}{\fldrslt \cf3 https://uk.mathworks.com/help/stats/classify.html?searchHighlight=classify%20discriminant%20analysis&s_tid=doc_srchtitle}} \
+\pard\pardeftab720\sb225\sa75\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sb30\sa135\partightenfactor0
+
+\f1\b\fs26 \cf4 Overview
+\f0\b0\fs21 \cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa225\partightenfactor0
+\ls2\ilvl0\cf0    \'95    course material \
+   \'95    matlab environment \
+   \'95    getting help \
+   \'95    vectors and matrices \
+   \'95    array indexing and operations \
+   \'95    simple plotting \
+\pard\pardeftab720\sb30\sa135\partightenfactor0
+\cf0 Materials are available at git hub\
+\pard\pardeftab720\sb30\sa135\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://github.com/rcgsheffield/matlab-cic6007"}}{\fldrslt \cf3 https://github.com/rcgsheffield/matlab-cic6007}}\
+\
+we will finish the session by working through a case study+\
+\
+This session starts with the first step:\
+How do we import data into Matlab?\
+First, briefly review some fundamental methods in Matlab\
+\
+\pard\pardeftab720\sb30\sa135\partightenfactor0
+
+\f1\b\fs26 \cf5 Low-Level File I/O.
+\f0\b0\fs21 \cf0 Suppose we have data from a file containing numeric data. How can we read this in efficiently?  Three-step process, using textscan for text files.\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf6 % The open/close statements are essential. Ask the audience: what happens\
+% if the file remains open? Why is it good practice to ensure files are\
+% closed after use?\
+\pard\pardeftab720\partightenfactor0
+\cf0 fileID = fopen(\cf7 'HeightWaistData.txt'\cf0 );\
+\pard\pardeftab720\sb30\sa135\partightenfactor0
+
+\f0 \cf0 \
+\
+}
